@@ -1,22 +1,22 @@
-.grid__gm {
+.gm-grid {
   width: 100%;
   display: block;
   padding: 0;
 }
 
-.grid__gm.wide {
+.gm-grid.wide {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.row__gm {
+.gm-row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -4px;
   margin-right: -4px;
 }
 
-.row__gm.no-gutters {
+.gm-row.no-gutters {
   margin-left: 0;
   margin-right: 0;
 }
@@ -25,7 +25,7 @@
   padding-left: 4px;
   padding-right: 4px;
 }
-w .row__gm.no-gutters .col {
+w .gm-row.no-gutters .col {
   padding-left: 0;
   padding-right: 0;
 }
@@ -140,7 +140,7 @@ w .row__gm.no-gutters .col {
 
 /* >= Tablet */
 @media (min-width: 740px) {
-  .row__gm {
+  .gm-row {
     margin-left: -8px;
     margin-right: -8px;
   }
@@ -276,12 +276,12 @@ w .row__gm.no-gutters .col {
 
 /* PC medium resolution > */
 @media (min-width: 1113px) {
-  .row__gm {
+  .gm-row {
     margin-left: -12px;
     margin-right: -12px;
   }
 
-  .row__gm.sm-gutter {
+  .gm-row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -291,7 +291,7 @@ w .row__gm.no-gutters .col {
     padding-right: 12px;
   }
 
-  .row__gm.sm-gutter .col {
+  .gm-row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -439,12 +439,12 @@ w .row__gm.no-gutters .col {
     width: 984px;
   }
 
-  .wide .row__gm {
+  .wide .gm-row {
     margin-left: -12px;
     margin-right: -12px;
   }
 
-  .wide .row__gm.sm-gutter {
+  .wide .gm-row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -454,7 +454,7 @@ w .row__gm.no-gutters .col {
     padding-right: 12px;
   }
 
-  .wide .row__gm.sm-gutter .col {
+  .wide .gm-row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
   }

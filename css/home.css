@@ -1,5 +1,21 @@
-.header__top,
-header__top {
-  font-size: 1.6rem;
-  color: red;
+.header__top {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__main__search {
+}
+
+.header__main__logo {
+}
+
+.header__main__cart {
 }
