@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/gm-layout-grid.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/gm-font.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -21,43 +27,91 @@
           </div>
         </div>
         <div class="gm-grid wide">
-          <div class="header__main">
-            <div class="header__main__search">
+          <div class="header__main gm-row">
+            <div class="header__main__search col c-0 m-3 l-3">
               <form>
-                <input type="text" placeholder="Search" />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
-                  />
-                </svg>
+                <input
+                  type="text"
+                  id="search-field"
+                  name="words"
+                  placeholder="Search"
+                  value=""
+                  maxlength="100"
+                  autocorrect="off"
+                  autocomplete="off"
+                />
+                <i class="ri-search-line"></i>
               </form>
             </div>
-            <div class="header__main__logo">logo</div>
-            <div class="header__main__cart">cart</div>
+            <div class="header__main__logo col c-12 m-6 l-6">
+              <a href="#"><img src="/images/logo.png" alt="logo gom moc" /></a>
+            </div>
+            <div class="header__main__cart col c-0 m-3 l-3">
+              <a href="#">
+                <i class="ri-shopping-cart-line"></i>
+                <span>0</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="gm-row">
-          <div class="header__navbar">
-            <ul>
-              <li>San pham moi</li>
-              <li>Chau trong cay</li>
-              <li>Binh Hoa</li>
-              <li>Trang tri/phu kien</li>
-              <li>giam gia</li>
-              <li>Lien He</li>
+        <div class="gm-grid">
+          <div class="header__navbar gm-row">
+            <ul class="c-0 m-12">
+              <li><a href="#">San pham moi</a></li>
+              <li><a href="#">Chau trong cay</a></li>
+              <li><a href="#">Binh Hoa</a></li>
+              <li><a href="#">Trang tri/phu kien</a></li>
+              <li><a href="#">giam gia</a></li>
+              <li><a href="#">Lien He</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="gm-grid">
+        <div class="nav__mobile gm-row">
+          <div
+            class="nav__mobile__menu data-menu='product'  col c-4 m-0 l-0"
+          >
+            <i class="ri-menu-line"></i>
+            menu
+          </div>
+          <div class="nav__mobile__menu  data-menu='search' c-4 m-0 l-0">
+            <i class="ri-search-line"></i> search
+          </div>
+          <div class="nav__mobile__menu  data-menu='cart' col c-4 m-0 l-0">
+            <i class="ri-shopping-cart-line"></i> cart
+          </div>
+        </div>
+        <div class="nav__mobile__menu-product">
+          <ul class="nav__mobile__menu-product-links"">
+            <li class="nav__mobile__menu-product-link"><a href="#">San pham moi</a></li>
+            <li class="nav__mobile__menu-product-link"><a href="#">Chau trong cay</a></li>
+            <li class="nav__mobile__menu-product-link"><a href="#">giam gia</a></li>
+            <li class="nav__mobile__menu-product-link"><a href="#">Lien He</a></li>
+            <li class="nav__mobile__menu-product-link"><a href="#">Binh Hoa</a></li>
+            <li class="nav__mobile__menu-product-link"><a href="#">Trang tri/phu kien</a></li>
+          </ul>
+          <div class="nav__mobile__menu-product-close-btn">
+            <i class="ri-close-circle-fill"></i>
+            
+          </div>
+        </div>
+      </div>
     </header>
-    <section>
+
+    <!-- <section>
       <div class="header__breadcrumb">breadcrumb</div>
-    </section>
+    </section> -->
+    <script >
+      $(document).ready(function(){
+        
+        var menu = $(this).data('menu')
+        $('.nav__mobile__menu').click(function(){
+          alert(menu)
+        })   
+          // console.log($('.nav__mobile_menu')) 
+      });
+     
+    </script>
   </body>
 </html>
