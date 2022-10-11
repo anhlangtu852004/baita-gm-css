@@ -21,7 +21,7 @@
     <header>
       <div class="header">
         <div class="gm-grid">
-          <div class="header__top gm-fo-16">
+          <div class="gm-row header__top">
             dia chi 68 nguyen hu tho, Phuong Tan Hung, quan 7 ( gan cau Kinh
             te).Hotline 0908.064.564
           </div>
@@ -67,51 +67,70 @@
           </div>
         </div>
       </div>
+      <!-- navbar for mobile -->
       <div class="gm-grid">
         <div class="nav__mobile gm-row">
-          <div
-            class="nav__mobile__menu data-menu='product'  col c-4 m-0 l-0"
-          >
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="product">
             <i class="ri-menu-line"></i>
             menu
           </div>
-          <div class="nav__mobile__menu  data-menu='search' c-4 m-0 l-0">
-            <i class="ri-search-line"></i> search
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="search">
+            <i class="ri-search-line"></i>
+            Search
           </div>
-          <div class="nav__mobile__menu  data-menu='cart' col c-4 m-0 l-0">
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="cart">
             <i class="ri-shopping-cart-line"></i> cart
           </div>
         </div>
-        <div class="nav__mobile__menu-product">
-          <ul class="nav__mobile__menu-product-links"">
-            <li class="nav__mobile__menu-product-link"><a href="#">San pham moi</a></li>
-            <li class="nav__mobile__menu-product-link"><a href="#">Chau trong cay</a></li>
-            <li class="nav__mobile__menu-product-link"><a href="#">giam gia</a></li>
-            <li class="nav__mobile__menu-product-link"><a href="#">Lien He</a></li>
-            <li class="nav__mobile__menu-product-link"><a href="#">Binh Hoa</a></li>
-            <li class="nav__mobile__menu-product-link"><a href="#">Trang tri/phu kien</a></li>
-          </ul>
-          <div class="nav__mobile__menu-product-close-btn">
-            <i class="ri-close-circle-fill"></i>
-            
-          </div>
-        </div>
+
+        <!-- navbar for mobile -->
       </div>
     </header>
-
+    <div class="gm-grid nav__mobile__menu-product">
+      <ul class="nav__mobile__menu-product-links">
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">San pham moi</a>
+        </li>
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">Chau trong cay</a>
+        </li>
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">giam gia</a>
+        </li>
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">Lien He</a>
+        </li>
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">Binh Hoa</a>
+        </li>
+        <li class="nav__mobile__menu-product-link">
+          <a href="#">Trang tri/phu kien</a>
+        </li>
+        <div class="nav__mobile__menu-product-close-btn">
+          <i class="ri-close-circle-fill"></i>
+        </div>
+      </ul>
+    </div>
     <!-- <section>
       <div class="header__breadcrumb">breadcrumb</div>
     </section> -->
-    <script >
-      $(document).ready(function(){
-        
-        var menu = $(this).data('menu')
-        $('.nav__mobile__menu').click(function(){
-          alert(menu)
-        })   
-          // console.log($('.nav__mobile_menu')) 
+    <script>
+      $(document).ready(function () {
+        var menuField;
+        $(".nav__mobile__menu").click(function () {
+          var menu = $(this).data("menu");
+          $(".nav__mobile__menu-" + menu).addClass(
+            "nav__mobile__menu-" + menu + "-show"
+          );
+          menuField = menu;
+        });
+        $(".nav__mobile__menu-product-close-btn").click(function () {
+          $(".nav__mobile__menu-" + menuField).removeClass(
+            "nav__mobile__menu-" + menuField + "-show"
+          );
+        });
+        // console.log($('.nav__mobile_menu'))
       });
-     
     </script>
   </body>
 </html>
