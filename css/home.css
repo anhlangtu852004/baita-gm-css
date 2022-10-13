@@ -1,5 +1,5 @@
 /* start header */
-.header .header__top {
+.header__top {
   color: var(--white-color);
   background-color: var(--black-color);
   text-align: center;
@@ -25,9 +25,8 @@
 /* nav mobile */
 .nav__mobile {
   height: 45px;
-  position: -webkit-sticky; /* Safari */
   position: fixed;
-  bottom: 10;
+  bottom: 0;
   left: 0;
   border-top: 1px solid var(--border-light-color);
   border-bottom: 1px solid var(--border-light-color);
@@ -57,7 +56,8 @@
   background-color: transparent;
 }
 
-.nav__mobile__menu-product {
+.nav__mobile__menu-product,
+.nav__mobile__menu-search {
   top: 0;
   left: 0;
   right: 0;
@@ -68,10 +68,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100%);
-  opacity: 0;
+  transform: translateY(-100%);
+  opacity: 1;
+  /* display: none; */
 }
-.nav__mobile__menu-product-show {
+.nav__mobile__menu-product-show,
+.nav__mobile__menu-search-show {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -105,7 +107,52 @@
 
   cursor: pointer;
 }
+.nav__mobile__menu-search-form {
+  width: 100%;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
 
+.nav__mobile__menu-search-form-field {
+  position: relative;
+  width: 100%;
+}
+
+#search-field-mobile {
+  padding: 8px 30px 8px 0px;
+  font-size: 1.6em;
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-light-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  color: var(--white-color);
+  width: 100%;
+  height: 40px;
+  font-size: 2em;
+}
+input#search-field-mobile:focus {
+  border-bottom: 2px solid var(--white-color);
+  outline: none;
+}
+
+input#search-field-mobile::placeholder {
+  color: var(--text-color);
+  font-size: 1.3em;
+}
+
+.nav__mobile__menu-search-form-field i {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 3em;
+  color: var(--primary-color);
+}
 /* end nav mobile */
 /* end header */
 
@@ -116,7 +163,7 @@
     color: var(--white-color);
     background-color: var(--black-color);
     text-align: center;
-    padding: 1rem 0;
+    padding: 8px 10px;
   }
 
   .header__main {

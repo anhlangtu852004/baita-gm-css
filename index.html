@@ -21,7 +21,7 @@
     <header>
       <div class="header">
         <div class="gm-grid">
-          <div class="gm-row header__top">
+          <div class="header__top">
             dia chi 68 nguyen hu tho, Phuong Tan Hung, quan 7 ( gan cau Kinh
             te).Hotline 0908.064.564
           </div>
@@ -86,7 +86,10 @@
         <!-- navbar for mobile -->
       </div>
     </header>
-    <div class="gm-grid nav__mobile__menu-product">
+
+    <!-- navbar for mobile product -->
+
+    <div class="nav__mobile__menu-product">
       <ul class="nav__mobile__menu-product-links">
         <li class="nav__mobile__menu-product-link">
           <a href="#">San pham moi</a>
@@ -111,6 +114,31 @@
         </div>
       </ul>
     </div>
+    <!-- end navbar for mobile product -->
+
+    <!-- navbar for mobile product search-->
+    <div class="nav__mobile__menu-search">
+      <form class="nav__mobile__menu-search-form">
+        <div class="nav__mobile__menu-search-form-field">
+          <input
+            type="text"
+            id="search-field-mobile"
+            name="search"
+            placeholder="Search"
+            value=""
+            maxlength="100"
+            autocorrect="off"
+            autocomplete="off"
+          />
+          <i class="ri-search-line"></i>
+        </div>
+        <div class="nav__mobile__menu-product-close-btn">
+          <i class="ri-close-circle-fill"></i>
+        </div>
+      </form>
+    </div>
+    <!--end navbar for mobile product search-->
+
     <!-- <section>
       <div class="header__breadcrumb">breadcrumb</div>
     </section> -->
@@ -123,13 +151,16 @@
             "nav__mobile__menu-" + menu + "-show"
           );
           menuField = menu;
+          if (menu === "search") {
+            $("#search-field-mobile").focus();
+          }
         });
+
         $(".nav__mobile__menu-product-close-btn").click(function () {
-          $(".nav__mobile__menu-" + menuField).removeClass(
+          $(".nav__mobile__menu-" + menuField).toggleClass(
             "nav__mobile__menu-" + menuField + "-show"
           );
         });
-        // console.log($('.nav__mobile_menu'))
       });
     </script>
   </body>
