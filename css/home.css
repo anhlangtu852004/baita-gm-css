@@ -187,7 +187,7 @@ input#search-field-mobile::placeholder {
 .owl-dot {
   height: 10px;
   width: 15px;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   outline: none;
   margin: 0 5px;
@@ -204,6 +204,107 @@ input#search-field-mobile::placeholder {
   width: 45px;
 }
 /* end banner slideshow */
+
+/* hotsale */
+.hotsale {
+  margin-top: 20px;
+}
+.hotsale__container {
+  background-color: rgb(213, 213, 213);
+  border-radius: var(--border-radius);
+  padding: 20px 20px;
+}
+
+.hotsale__container__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hotsale__container__head__title {
+  font-size: 2.6em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.hotsale__container__head__cate {
+  display: flex;
+  gap: 10px;
+}
+
+.hotsale__container__head__cate__btn {
+}
+.hotsale__container__head__cate__btn-active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+.hotsale__container__head__cate__btn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.hotsale__container__head__time {
+  font-size: 1.4em;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.hotsale__container__head__time__title {
+}
+
+.hotsale__container__head__time__run {
+}
+
+.hotsale__container__head__time__run span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 1.6em;
+  font-weight: bold;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.hotsale__container__main {
+  margin-top: 10px;
+}
+.hotsale__container__main__product {
+  font-size: 1.6em;
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 160px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  padding: 5px;
+}
+.hotsale__container__main__product-img {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+}
+.hotsale__container__main__product-title {
+  font-size: 1em;
+  font-weight: bold;
+  display: -webkit-box;
+  max-height: $font-size * $line-height * $lines-to-show; /* Fallback for non-webkit */
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*end hotsale */
 
 /* responesive */
 @media (min-width: 740px) {
