@@ -33,7 +33,7 @@
   <body>
     <header>
       <div class="header">
-        <div class="gm-grid">
+        <div class="">
           <div class="header__top">
             dia chi 68 nguyen hu tho, Phuong Tan Hung, quan 7 ( gan cau Kinh
             te).Hotline 0908.064.564
@@ -81,7 +81,7 @@
         </div>
       </div>
       <!-- navbar for mobile -->
-      <div class="gm-grid">
+      <div class="">
         <div class="nav__mobile">
           <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="product">
             <i class="ri-menu-line"></i>
@@ -101,54 +101,57 @@
     </header>
 
     <!-- navbar for mobile product -->
-    <div class="nav__mobile__menu-product">
-      <ul class="nav__mobile__menu-product-links">
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">San pham moi</a>
-        </li>
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">Chau trong cay</a>
-        </li>
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">giam gia</a>
-        </li>
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">Lien He</a>
-        </li>
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">Binh Hoa</a>
-        </li>
-        <li class="nav__mobile__menu-product-link">
-          <a href="#">Trang tri/phu kien</a>
-        </li>
-        <div class="nav__mobile__menu-product-close-btn">
-          <i class="ri-close-circle-fill"></i>
-        </div>
-      </ul>
+    <div class="nav__mobile__menu__container">
+      <div class="nav__mobile__menu-product">
+        <ul class="nav__mobile__menu-product-links">
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">San pham moi</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">Chau trong cay</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">giam gia</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">Lien He</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">Binh Hoa</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="#">Trang tri/phu kien</a>
+          </li>
+          <div class="nav__mobile__menu-product-close-btn">
+            <i class="ri-close-circle-fill"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="nav__mobile__menu-search">
+        <form class="nav__mobile__menu-search-form">
+          <div class="nav__mobile__menu-search-form-field">
+            <input
+              type="text"
+              id="search-field-mobile"
+              name="search"
+              placeholder="Search"
+              value=""
+              maxlength="100"
+              autocorrect="off"
+              autocomplete="off"
+            />
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="nav__mobile__menu-product-close-btn">
+            <i class="ri-close-circle-fill"></i>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- end navbar for mobile product -->
 
     <!-- navbar for mobile product search-->
-    <div class="nav__mobile__menu-search">
-      <form class="nav__mobile__menu-search-form">
-        <div class="nav__mobile__menu-search-form-field">
-          <input
-            type="text"
-            id="search-field-mobile"
-            name="search"
-            placeholder="Search"
-            value=""
-            maxlength="100"
-            autocorrect="off"
-            autocomplete="off"
-          />
-          <i class="ri-search-line"></i>
-        </div>
-        <div class="nav__mobile__menu-product-close-btn">
-          <i class="ri-close-circle-fill"></i>
-        </div>
-      </form>
-    </div>
+
     <!--end navbar for mobile product search-->
 
     <!-- banner slideshow -->
@@ -201,25 +204,158 @@
               </div>
             </div>
           </div>
-          <div class="hotsale__container__main">
+          <div class="hotsale__container__main owl-carousel">
+            <!-- product -->
             <div class="hotsale__container__main__product">
-              <div class="hotsale__container__main__product-img"></div>
-              <div class="hotsale__container__main__product-title">
-                3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
-                Biển
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2137-2545-Chau-Gom-ID-Tron-Xanh-Ngoc-Hoa-Tiet-38x38x36-SP02545-1.png"
+                    alt=""
+                /></a>
               </div>
-              <div class="hotsale__container__main__product-sku">
-                Mã SP: SP03003APXNXB
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
               </div>
-              <div class="hotsale__container__main__product-promote-price">
-                100
-              </div>
-              <div class="hotsale__container__main__product-price">200</div>
             </div>
+            <div class="hotsale__container__main__product">
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2300-2773-Chau-Atlantic-Lu-Phoi-Xanh-Duong-55x55x70-M42-SP02773-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
+              </div>
+            </div>
+            <div class="hotsale__container__main__product">
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2300-2773-Chau-Atlantic-Lu-Phoi-Xanh-Duong-55x55x70-M42-SP02773-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
+              </div>
+            </div>
+            <div class="hotsale__container__main__product">
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2638-2995 Atlantic-Lu-Phoi-Mieng-Xanh-Ngoc-54x54x66-M39-SP02995-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
+              </div>
+            </div>
+            <div class="hotsale__container__main__product">
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2637-2994 Atlantic-Lu-Phoi-Mieng-Xanh-Ngoc-60x60x66-M44-SP02994-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
+              </div>
+            </div>
+            <div class="hotsale__container__main__product">
+              <div class="hotsale__container__main__product-img">
+                <a href="#"
+                  ><img
+                    src="images/sp/2669-3003-Atlantic-Lu-54x54x66 M39-Phoi-Men-Tron-Mau-Xanh-Ngoc-Xanh-Bien-SP03003APXNXB-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="hotsale__container__main__product-info">
+                <div class="hotsale__container__main__product-title">
+                  3003 Atlantic Lu 54x54x66 M39 Phối Men Trơn Màu Xanh Ngọc/Xanh
+                  Biển
+                </div>
+                <div class="hotsale__container__main__product-sku">
+                  Mã SP: SP03003APXNXB
+                </div>
+                <div class="hotsale__container__main__product-promote-price">
+                  <strong>1,100,000<sup>đ</sup></strong>
+                </div>
+                <div class="hotsale__container__main__product-price">
+                  32,200,000<sup>đ</sup>
+                </div>
+              </div>
+            </div>
+            <!-- product -->
           </div>
         </div>
       </div>
     </section>
+
     <!--end hot sale  -->
 
     <!-- txt lipsum -->
@@ -249,6 +385,7 @@
         var menuField;
         $(".nav__mobile__menu").click(function () {
           var menu = $(this).data("menu");
+          $(".nav__mobile__menu__container").css("display", "block");
           $(".nav__mobile__menu-" + menu).addClass(
             "nav__mobile__menu-" + menu + "-show"
           );
@@ -259,7 +396,7 @@
         });
 
         $(".nav__mobile__menu-product-close-btn").click(function () {
-          $(".nav__mobile__menu-" + menuField).toggleClass(
+          $(".nav__mobile__menu-" + menuField).removeClass(
             "nav__mobile__menu-" + menuField + "-show"
           );
         });
@@ -270,7 +407,7 @@
     <!-- script for banner slideshow -->
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".banner__slideShow__container").owlCarousel({
           items: 2,
           margin: 10,
           loop: true,
@@ -292,8 +429,34 @@
             },
           },
         });
+        // <!-- script for banner hotsale -->
+        $(".hotsale__container__main").owlCarousel({
+          stagePadding: 20,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          nav: true,
+          dots: false,
+          navText: [
+            "<i class='ri-arrow-left-s-line hotsale-pre-btn'></i>",
+            "<i class='ri-arrow-right-s-line hotsale-next-btn'></i>",
+          ],
+          responsive: {
+            0: {
+              items: 2,
+            },
+            740: {
+              items: 3,
+            },
+            1024: {
+              items: 5,
+            },
+          },
+        });
       });
     </script>
+
     <!-- end script for banner slideshow -->
   </body>
 </html>

@@ -1,11 +1,11 @@
 .gm-grid {
   width: 100%;
   display: block;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .gm-grid.wide {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -140,6 +140,9 @@ w .gm-row.no-gutters .col {
 
 /* >= Tablet */
 @media (min-width: 740px) {
+  .gm-grid {
+    padding: 0;
+  }
   .gm-row {
     margin-left: -8px;
     margin-right: -8px;
@@ -428,6 +431,9 @@ w .gm-row.no-gutters .col {
 
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
+  .gm-grid {
+    padding: 0;
+  }
   .wide {
     width: 644px;
   }
@@ -435,6 +441,9 @@ w .gm-row.no-gutters .col {
 
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
+  .gm-grid {
+    padding: 0;
+  }
   .wide {
     width: 984px;
   }
