@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #fcb42e;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --border-color: #333;
+  --border-light-color: #c8c8c8;
+  --smooth: all 0.3s linear;
+  --border-radius: 10px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.3em;
+  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}

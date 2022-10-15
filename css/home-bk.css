@@ -22,7 +22,6 @@
 .header__main__logo img {
   height: 80px;
 }
-
 /* nav mobile */
 .nav__mobile {
   height: 45px;
@@ -163,6 +162,221 @@ input#search-field-mobile::placeholder {
 }
 /* end nav mobile */
 /* end header */
+
+/* home banner slide */
+.banner__slideShow {
+  margin-top: 10px !important;
+}
+/* end home banner slide */
+
+/* banner slideshow */
+.banner__slideShow__container {
+}
+.banner__slideShow__container .item {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.banner__slideShow__container .item img {
+  /* width: 690px;
+  height: 300px; */
+  object-fit: cover;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  height: 10px;
+  width: 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid var(--primary-color) !important;
+  transition: var(--smooth);
+}
+
+.owl-dot:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.owl-dot.active {
+  background-color: var(--primary-color) !important;
+  width: 45px;
+}
+/* end banner slideshow */
+
+/* hotsale */
+.hotsale {
+  margin-top: 20px;
+}
+.hotsale__container {
+  /* background-color: rgb(213, 213, 213); */
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    172deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(60, 60, 60, 1) 88%
+  );
+
+  border-radius: var(--border-radius);
+
+  padding: 30px 20px 10px 20px;
+}
+
+.hotsale__container__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hotsale__container__head__title {
+  font-size: 2.6em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.hotsale__container__head__cate {
+  display: flex;
+  gap: 10px;
+}
+
+.hotsale__container__head__cate__btn {
+  font-size: 1.4em;
+}
+.hotsale__container__head__cate__btn-active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+.hotsale__container__head__cate__btn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.hotsale__container__head__time {
+  font-size: 1.4em;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.hotsale__container__head__time__title {
+  color: var(--white-color);
+}
+
+.hotsale__container__head__time__run {
+}
+
+.hotsale__container__head__time__run span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 1.6em;
+  font-weight: bold;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.hotsale__container__main {
+  margin-top: 20px;
+  /* display: flex;
+  gap: 10px;
+  flex-wrap: nowrap; */
+}
+.hotsale__container__main__product {
+  font-size: 1.4em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  min-width: 160px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  overflow: hidden;
+}
+.hotsale__container__main__product-img {
+  width: 160px;
+  height: 160px;
+}
+.hotsale__container__main__product-info {
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.hotsale__container__main__product-title {
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 3;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.hotsale__container__main__product-title a {
+  color: var(--black-color);
+}
+.hotsale__container__main__product-sku {
+  font-size: 0.9em;
+}
+.hotsale__container__main__product-promote-price {
+  font-size: 1.3em;
+  color: var(--primary-color);
+}
+.hotsale__container__main__product-price {
+  text-decoration: line-through;
+}
+
+.owl-nav {
+  position: relative;
+  top: -140px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.owl-nav .owl-prev,
+.owl-next {
+  font-size: 40px !important ;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 50%;
+  text-align: center;
+  /* position: relative; */
+}
+
+.owl-next {
+  position: absolute;
+  right: 0;
+  /* top: 20px; */
+}
+
+.hotsale-pre-btn,
+.hotsale-next-btn {
+  top: 12px;
+  left: 0px;
+  color: var(--primary-color);
+  position: absolute;
+}
+
+/*end hotsale */
 
 /* responesive */
 @media (min-width: 740px) {
