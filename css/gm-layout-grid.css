@@ -4,7 +4,14 @@
   padding: 0 10px;
 }
 
-.gm-grid.wide {
+.gm-grid-full {
+  width: 100%;
+  display: block;
+  padding: 0 0;
+}
+
+.gm-grid.wide,
+.gm-grid-full.wide {
   max-width: 1200px;
   margin: 0 auto;
 }
