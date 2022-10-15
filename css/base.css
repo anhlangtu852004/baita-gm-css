@@ -38,3 +38,10 @@ body {
 a {
   text-decoration: none;
 }
+
+img {
+  text-decoration: none;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
