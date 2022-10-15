@@ -592,22 +592,54 @@
 
     <footer>
       <div class="footer__container gm-grid-full wide">
+        <div class="footer__container__social">
+          <div class="footer__container__social-icon">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></i></a>
+          </div>
+          <div class="footer__container__social-des">
+            hay cung chung toi xay dung nen nhung gia tri cot loi cua gom
+          </div>
+        </div>
         <div class="footer__container__policy">
           <div class="gm-row">
             <div class="col c-12 m-6 l-3 footer__container__policy-menu">
               <h3 class="footer__container__policy-menu-title">VỀ CHÚNG TÔI</h3>
-              <ul class="footer__container__policy-menu-content tab-show">
-                <li>Giới thiệu</li>
-                <li>Blog</li>
-                <li>Liên hệ</li>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                
               </ul>
             </div>
 
             <div class="col c-12 m-6 l-3 footer__container__policy-menu">
-              huong dan
+              <h3 class="footer__container__policy-menu-title">CHÍNH SÁCH</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Quy Định Đặt Hàng Và Giữ Hàng</a></li>
+                <li><a href="#">Quy Định Đổi / Trả Hàng</a></li>
+                
+              </ul>
+            </div>
+
+            <div class="col c-12 m-6 l-3 footer__container__policy-menu">
+              <h3 class="footer__container__policy-menu-title">HƯỚNG DẪN</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                
+              </ul>
             </div>
             <div class="col c-12 m-6 l-3 footer__container__policy-menu">
-              thoi gian lam viec
+              <h3 class="footer__container__policy-menu-title">THỜI GIAN LÀM VIỆC</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li>Thứ 2 - CN: Từ 8h00 - 19h00</li>
+                <li>Gọi Mua Hàng/Khiếu Nại: 0908 064 564</li>
+                
+              </ul>
             </div>
           </div>
         </div>
@@ -701,7 +733,27 @@
         });
       });
     </script>
-
     <!-- end script for banner slideshow -->
+
+    <!-- script for footer menu mobile -->
+    <script>
+      $(document).ready(function () {
+        $(".footer__container__policy-menu-title").each(function () {
+          $(this).click(function () {
+            $(this).toggleClass("tab-show");
+            var nextSib = $(this).next();
+            var heighSib = nextSib.prop("scrollHeight") + "px";
+            if (nextSib.css("height") !== "0px") {
+              // nextSib.prop("scrollHeight", null);
+              nextSib.css("height", "");
+              nextSib.css("margin-top", "");
+            } else {
+              nextSib.css({"height": heighSib, "margin-top": "20px" });
+            }
+          });
+        });
+      });
+    </script>
+    <!-- end script for footer menu mobile -->
   </body>
 </html>
