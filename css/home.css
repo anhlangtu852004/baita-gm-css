@@ -75,6 +75,7 @@
 .hotsale__container__head__title {
   font-size: 2.6em;
   font-weight: bold;
+  text-transform: uppercase;
   color: var(--primary-color);
 }
 .hotsale__container__head__cate {
@@ -212,6 +213,33 @@ div.owl-nav .owl-prev,
 }
 
 /*end hotsale */
+
+/*popular product */
+.popular__product {
+  margin-top: 20px;
+}
+.popular__product__container {
+}
+.popular__product__container__head {
+  text-align: center;
+}
+
+.popular__product__container__head-title {
+  font-size: 2.6em;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.popular__product__container__head-sep {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--black-color);
+}
+
+/*popular product */
 
 /* responesive */
 @media (min-width: 740px) {
