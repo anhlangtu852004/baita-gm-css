@@ -412,7 +412,14 @@ footer {
     /* this is for tab hiden*/
   }
   .footer__container__copyright {
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
+  }
+  .footer__container__social {
+    margin: 20px 0;
+  }
+  .footer__container__social-icon {
+    text-align: left;
+    margin: 0px 0;
   }
   /* end footer */
 }
