@@ -247,6 +247,7 @@ footer {
 .footer__container__copyright {
   text-align: center;
   font-size: 1.4em;
+  margin: 10px 0 50px 0;
 }
 
 /* end footer */
@@ -387,8 +388,32 @@ footer {
   /* nav for mobile */
 
   /* end header */
-  /* footer */
 
+  /* footer */
+  footer {
+  }
+
+  .footer__container__policy-menu {
+    border: none;
+  }
+  .footer__container__policy-menu-title {
+    cursor: default;
+  }
+  .footer__container__policy-menu-title::after {
+    content: "";
+  }
+
+  .footer__container__policy-menu-title:hover {
+    color: var(--black-color);
+  }
+  .footer__container__policy-menu-content {
+    height: auto;
+    margin-top: 20px;
+    /* this is for tab hiden*/
+  }
+  .footer__container__copyright {
+    margin: 10px 0 10px 0;
+  }
   /* end footer */
 }
 @media (min-width: 1113px) {
