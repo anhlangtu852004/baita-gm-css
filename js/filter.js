@@ -3,6 +3,11 @@ $(document).ready(function () {
   // active class
   $(".product__filter__container-content-item-field").each(function () {
     $(this).click(function () {
+      if ($(this).hasClass("filterActive")) {
+        $(this).find("i").css("display", "none");
+      } else {
+        $(this).find("i").css("display", "block");
+      }
       $(this).toggleClass("filterActive");
     });
   });

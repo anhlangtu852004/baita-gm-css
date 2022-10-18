@@ -7,7 +7,7 @@
 .product__container__head {
 }
 .product__container__head-title {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -28,7 +28,7 @@
   padding: 10px;
 }
 .product__container__main-items-info-title {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 
   font-weight: bold;
   width: 100%;
@@ -44,15 +44,15 @@
   color: var(--black-color);
 }
 .product__container__main-items-info--sku {
-  font-size: 1.2em;
+  font-size: 1.3rem;
 }
 .product__container__main-items-info--price {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 .product__container-price-items-info--old {
   color: #333;
   text-decoration: line-through;
-  font-size: 1.2em;
+  font-size: 1.4rem;
 }
 /* end product */
 

@@ -26,16 +26,6 @@ body {
   overflow-x: hidden;
 }
 
-.btn {
-  text-align: center;
-  font-size: 1.3em;
-  border: 1px solid var(--border-color);
-  background-color: #fff;
-  border-radius: 20px;
-  display: inline-block;
-  padding: 8px 20px;
-  cursor: pointer;
-}
 a {
   text-decoration: none;
 }
@@ -45,4 +35,40 @@ img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+}
+
+.gm-btn {
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.gm-btn-full {
+  width: 100%;
+  height: 100%;
+}
+
+.gm-btn-check {
+  /* position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none; */
+}
+.gm-btn-check:checked + .gm-btn-outline-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.gm-btn-outline-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.gm-btn-outline-black {
+  border: 1px solid var(--black-color);
+}
+
+.gm-choosed {
+  display: none;
+  position: absolute;
+  right: -2px;
+  top: -3px;
 }
