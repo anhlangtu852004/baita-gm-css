@@ -13,6 +13,7 @@ $(document).ready(function () {
   });
   $("#product__filter__container-content-footer-unselected").click(function () {
     $(".filterActive").removeClass("filterActive");
+    $(".gm-choosed").hide();
   });
   //end active class
 

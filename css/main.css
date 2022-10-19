@@ -551,9 +551,11 @@ footer {
   .product__filter {
     display: inline-block;
   }
-
+  .product__filter__container-content-title {
+    font-size: 1.6rem;
+  }
   .product__filter__container-content {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .product__filter__container-warper {
     width: 900px;
@@ -572,6 +574,7 @@ footer {
   .product__filter__container-content-item-field {
     flex-basis: auto;
   }
+
   /* end product filter */
 }
 @media (min-width: 1113px) {
