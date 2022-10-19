@@ -1,0 +1,11 @@
+/*  product */
+.product__detail {
+  font-size: 1.6rem;
+}
+/* end product */
+
+/* responesive */
+@media (min-width: 740px) {
+}
+@media (min-width: 1113px) {
+}

@@ -40,8 +40,8 @@ img {
 .gm-btn {
   text-align: center;
   font-size: 1.3rem;
-  display: block;
-  padding: 8px 20px;
+  display: inline-block;
+  padding: 12px 20px;
   cursor: pointer;
 }
 .gm-btn-full {
@@ -54,10 +54,7 @@ img {
   clip: rect(0, 0, 0, 0);
   pointer-events: none; */
 }
-.gm-btn-check:checked + .gm-btn-outline-primary {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-}
+
 .gm-btn-outline-primary {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);

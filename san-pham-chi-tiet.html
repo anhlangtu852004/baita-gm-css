@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarouse/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarouse/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/gm-layout-grid.css" />
+
+    <link rel="stylesheet" href="css/gm-font.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <title>San Pham moi</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="">
+          <div class="header__top">
+            dia chi 68 nguyen hu tho, Phuong Tan Hung, quan 7 ( gan cau Kinh
+            te).Hotline 0908.064.564
+          </div>
+        </div>
+        <div class="gm-grid wide">
+          <div class="header__main gm-row">
+            <div class="header__main__search col c-0 m-3 l-3">
+              <form>
+                <input
+                  type="text"
+                  id="search-field"
+                  name="words"
+                  placeholder="Search"
+                  value=""
+                  maxlength="100"
+                  autocorrect="off"
+                  autocomplete="off"
+                />
+                <i class="ri-search-line"></i>
+              </form>
+            </div>
+            <div class="header__main__logo col c-12 m-6 l-6">
+              <a href="/"><img src="/images/logo.png" alt="logo gom moc" /></a>
+            </div>
+            <div class="header__main__cart col c-0 m-3 l-3">
+              <a href="#">
+                <i class="ri-shopping-cart-line"></i>
+                <span>0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="gm-grid">
+          <div class="header__navbar gm-row">
+            <ul class="c-0 m-12">
+              <li>
+                <a href="/san-pham-moi.html">San pham moi</a>
+              </li>
+              <li>
+                <a href="/chau-trong-cay.html" class="activeMenu"
+                  >Chau trong cay</a
+                >
+              </li>
+              <li><a href="/binh-hoa.html">Binh Hoa</a></li>
+              <li><a href="/trang-tri-phu-kien.html">Trang tri/phu kien</a></li>
+              <li><a href="/giam-gia.html">giam gia</a></li>
+              <li><a href="/lien-he.html">Lien He</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar for mobile -->
+      <div class="">
+        <div class="nav__mobile">
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="product">
+            <i class="ri-menu-line"></i>
+            menu
+          </div>
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="search">
+            <i class="ri-search-line"></i>
+            Search
+          </div>
+          <div class="nav__mobile__menu col c-4 m-0 l-0" data-menu="cart">
+            <i class="ri-shopping-cart-line"></i> cart
+          </div>
+        </div>
+      </div>
+      <!-- navbar for mobile -->
+    </header>
+
+    <!-- navbar for mobile product -->
+    <div class="nav__mobile__menu__container">
+      <div class="nav__mobile__menu-product">
+        <ul class="nav__mobile__menu-product-links">
+          <li class="nav__mobile__menu-product-link">
+            <a href="san-pham-moi.html">San pham moi</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="/chau-trong-cay.html">Chau trong cay</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="/binh-hoa.html">Binh Hoa</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="trang-tri-phu-kien.html"> Trang tri/phu kien</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="/giam-gia.html">giam gia</a>
+          </li>
+          <li class="nav__mobile__menu-product-link">
+            <a href="/lien-he">Lien He</a>
+          </li>
+          <div class="nav__mobile__menu-product-close-btn">
+            <i class="ri-close-circle-fill"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="nav__mobile__menu-search">
+        <form class="nav__mobile__menu-search-form">
+          <div class="nav__mobile__menu-search-form-field">
+            <input
+              type="text"
+              id="search-field-mobile"
+              name="search"
+              placeholder="Search"
+              value=""
+              maxlength="100"
+              autocorrect="off"
+              autocomplete="off"
+            />
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="nav__mobile__menu-product-close-btn">
+            <i class="ri-close-circle-fill"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <div class="breadcrumb__container gm-grid wide">
+        <span> <a href="/">trang chur</a></span> /
+        <span> <a href="/">chau trong cay</a></span> /
+        <span> <a href="/">chau atlantic</a></span> /
+        <span>chi tiet san pham</span>
+      </div>
+    </div>
+    <!-- end breadcrumb -->
+
+    <!-- product detail here -->
+    <div class="product__detail">
+      <div class="gm-grid wide">
+        <div class="gm-row">
+          <div class="product__detail-img col c-12 m-6 l-6">img</div>
+          <div class="product__detail-info col c-12 m-6 l-6">info</div>
+        </div>
+      </div>
+    </div>
+    <!-- end product detail here -->
+
+    <!-- footer  -->
+    <footer>
+      <div class="footer__container gm-grid-full wide">
+        <div class="footer__container__social m-0 l-0">
+          <div class="footer__container__social-icon">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </div>
+          <div class="footer__container__social-des">
+            hay cung chung toi xay dung nen nhung gia tri cot loi cua gom
+          </div>
+        </div>
+        <div class="footer__container__policy">
+          <div class="gm-row">
+            <div class="col c-12 m-6 l-3 footer__container__policy-menu">
+              <h3 class="footer__container__policy-menu-title">VỀ CHÚNG TÔI</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+
+            <div class="col c-12 m-6 l-3 footer__container__policy-menu">
+              <h3 class="footer__container__policy-menu-title">CHÍNH SÁCH</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Quy Định Đặt Hàng Và Giữ Hàng</a></li>
+                <li><a href="#">Quy Định Đổi / Trả Hàng</a></li>
+              </ul>
+            </div>
+
+            <div class="col c-12 m-6 l-3 footer__container__policy-menu">
+              <h3 class="footer__container__policy-menu-title">HƯỚNG DẪN</h3>
+              <ul class="footer__container__policy-menu-content">
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+              </ul>
+              <div class="footer__container__social c-0 m-12 l-12">
+                <div class="footer__container__social-icon">
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                  <a href="#"><i class="ri-youtube-fill"></i></a>
+                  <a href="#"><i class="ri-pinterest-fill"></i></a>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col c-12 m-6 l-3 footer__container__policy-menu">
+              <h3 class="footer__container__policy-menu-title">
+                THỜI GIAN LÀM VIỆC
+              </h3>
+              <ul class="footer__container__policy-menu-content">
+                <li>Thứ 2 - CN: Từ 8h00 - 19h00</li>
+                <li>Gọi Mua Hàng/Khiếu Nại: 0908 064 564</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__container__copyright">
+          ©2019 Copyright Moc | Góp ý cho chúng tôi: 0908 064 564
+        </div>
+      </div>
+    </footer>
+    <!--end footer  -->
+
+    <script src="assets/jquery/jquery-3.6.1.min.js"></script>
+    <script
+      src="assets/OwlCarouse/dist/owl.carousel.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- script for mobile navbar -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>

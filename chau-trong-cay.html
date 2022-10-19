@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/filter.css" />
     <link rel="stylesheet" href="css/pagination.css" />
-    <title>San Pham moi</title>
+    <title>chau trong cay</title>
   </head>
   <body>
     <header>
@@ -74,9 +74,13 @@
           <div class="header__navbar gm-row">
             <ul class="c-0 m-12">
               <li>
-                <a href="/san-pham-moi.html" class="activeMenu">San pham moi</a>
+                <a href="/san-pham-moi.html">San pham moi</a>
               </li>
-              <li><a href="/chau-trong-cay.html">Chau trong cay</a></li>
+              <li>
+                <a href="/chau-trong-cay.html" class="activeMenu"
+                  >Chau trong cay</a
+                >
+              </li>
               <li><a href="/binh-hoa.html">Binh Hoa</a></li>
               <li><a href="/trang-tri-phu-kien.html">Trang tri/phu kien</a></li>
               <li><a href="/giam-gia.html">giam gia</a></li>
@@ -124,7 +128,7 @@
             <a href="/giam-gia.html">giam gia</a>
           </li>
           <li class="nav__mobile__menu-product-link">
-            <a href="/lien-he">Lien He</a>
+            <a href="/lien-he.html">Lien He</a>
           </li>
           <div class="nav__mobile__menu-product-close-btn">
             <i class="ri-close-circle-fill"></i>
@@ -156,7 +160,7 @@
     <!-- breadcrumb -->
     <div class="breadcrumb">
       <div class="breadcrumb__container gm-grid wide">
-        <span> <a href="/">trang chur</a></span> / <span>San pham moi</span>
+        <span> <a href="/">trang chur</a></span> / <span>Chau trong cay</span>
       </div>
     </div>
     <!-- end breadcrumb -->
@@ -165,8 +169,16 @@
     <section class="product">
       <div class="product__container gm-grid wide">
         <div class="product__container__head">
-          <h1 class="product__container__head-title">San Pham Moi</h1>
+          <h1 class="product__container__head-title">Chau Trong Cay</h1>
         </div>
+
+        <!-- sub menu -->
+        <div class="product__container__submenu">
+          <a href="" class="gm-btn submenuActive">Gom Atlantic</a>
+          <a href="" class="gm-btn">Outdoor Men Bong</a>
+          <a href="" class="gm-btn">Indoor Men Bong</a>
+        </div>
+        <!-- end sub menu -->
 
         <!-- filter -->
         <div class="product__filter sticky" id="btn-filter">
@@ -649,7 +661,7 @@
     <!-- end product -->
 
     <!-- modal loc sp -->
-    <div class="product__filter__container-content">
+    <div class="product__filter__container-content" id="modal">
       <div class="product__filter__container-warper">
         <div class="product__filter__container-content-title">
           San Pham moi

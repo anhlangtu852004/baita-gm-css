@@ -1,6 +1,7 @@
 // script for filter
 $(document).ready(function () {
   // active class
+
   $(".product__filter__container-content-item-field").each(function () {
     $(this).click(function () {
       if ($(this).hasClass("filterActive")) {
@@ -17,17 +18,27 @@ $(document).ready(function () {
   });
   //end active class
 
+  const modal = $("#modal");
+
   //nut dong modal filter
   $("#btn-filter-close").click(function () {
-    $(".product__filter__container-content").css("display", "none");
+    modal.css("display", "none");
   });
   // end nut dong modal filter
 
   //nut open modal filter
   $("#btn-filter-open").click(function () {
-    $(".product__filter__container-content").css("display", "block");
+    modal.css("display", "block");
   });
   //end nut open modal filter
+
+  // When the user clicks anywhere outside of the modal, close it
+
+  $(window).click(function (e) {
+    if (e.target.id == "modal") {
+      modal.css("display", "none");
+    }
+  });
 
   //add class va remove sticky class base on screen size
   var alterClass = function () {

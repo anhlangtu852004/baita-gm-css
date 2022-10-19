@@ -1,0 +1,39 @@
+/* pagination */
+.pagination {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.pagination-container {
+  display: inline-block;
+}
+
+.pagination-container a {
+  color: var(--black-color);
+  padding: 8px 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: 0 4px;
+}
+
+.pagination-container a.activePaginate {
+  border: 1px solid var(--black-color);
+}
+
+.pagination-container a:hover:not(.activePaginate) {
+  background-color: var(--second-color);
+}
+/* end pagination */
+
+/* responesive */
+@media (min-width: 740px) {
+  /* pagination */
+  /* .pagination {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .pagination-container a {
+    padding: 8px 16px;
+  } */
+  /* end pagination */
+}
