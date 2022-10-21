@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(function () {
   var owlMain = $("#owlMain");
   var htmlOwlMain = owlMain.html();
   var owlModalContent = $("#prd-owl-modal-content");
   var btnClose = $(".btn-modal-close");
   var indexOwlMainActive = 0;
-  var owl;
   var owlModal;
+  var owl;
 
   function owlMainStart(index) {
     owl = owlMain.owlCarousel({
@@ -22,31 +22,8 @@ $(document).ready(function () {
       onTranslated: counter,
     });
   }
-  owlModalContent.append(htmlOwlMain);
+
   owlMainStart(indexOwlMainActive);
-  owlModalStart(indexOwlMainActive);
-  $("#owlModal").hide();
-  $("#owlMain .slides a").on("click", function () {
-    owlModal.trigger("destroy.owl.carousel");
-    owlModalStart(indexOwlMainActive);
-    // owlModalStart(indexOwlMainActive);
-    // owlModal = owlModalContent.owlCarousel({
-    //   items: 1,
-    //   startPosition: indexOwlMainActive,
-    //   onTranslated: counter,
-    // });
-
-    $("#owlModal").show();
-  });
-
-  btnClose.click(function () {
-    owl.trigger("destroy.owl.carousel");
-    owlMainStart(indexOwlMainActive);
-    // owlModal.trigger("destroy.owl.carousel");
-    // owlModalStart(indexOwlMainActive);
-    // owlModalContent.empty();
-    $("#owlModal").hide();
-  });
 
   function counter(event) {
     var element = event.target; // DOM element, in this example .owl-carousel
@@ -60,6 +37,27 @@ $(document).ready(function () {
     }
     $("#counter").html("item " + item + " of " + items);
   }
+
+  $("#owlMain .slides a").on("click", function () {
+    owlModalContent.append(htmlOwlMain);
+    owlModalStart(indexOwlMainActive);
+
+    // owlModal = owlModalContent.owlCarousel({
+    //   items: 1,
+    //   startPosition: indexOwlMainActive,
+    //   onTranslated: counter,
+    // });
+
+    $("#owlModal").show();
+  });
+
+  btnClose.click(function () {
+    owl.trigger("destroy.owl.carousel");
+    owlMainStart(indexOwlMainActive);
+    $("#owlModal").hide();
+    owlModal.trigger("destroy.owl.carousel");
+    owlModalContent.empty();
+  });
 
   // cach1
   // $("#owlMain .slides a").on("click", function () {
