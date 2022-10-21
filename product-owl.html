@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarouse/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarouse/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <title>demo sp chi tiet owl</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="owl-carousel" id="owlMain">
+        <div class="slides">
+          <a><img src="https://unsplash.it/400/300/?image=121" alt="img1" /></a>
+        </div>
+        <div class="slides">
+          <a><img src="https://unsplash.it/400/300/?image=232" alt="img1" /></a>
+        </div>
+        <div class="slides">
+          <a><img src="https://unsplash.it/400/300/?image=343" alt="img1" /></a>
+        </div>
+        <div class="slides">
+          <a><img src="https://unsplash.it/400/300/?image=454" alt="img1" /></a>
+        </div>
+      </div>
+      <div id="counter"></div>
+    </div>
+
+    <div id="owlModal" class="prd-owl-modal">
+      <span><i class="ri-close-circle-fill btn-modal-close"></i></span>
+      <div class="prd-owl-modal-container">
+        <div id="prd-owl-modal-content" class="prd-owl-modal-content"></div>
+      </div>
+    </div>
+
+    <script src="assets/jquery/jquery-3.6.1.min.js"></script>
+    <script
+      src="assets/OwlCarouse/dist/owl.carousel.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- script for mobile navbar -->
+    <script src="js/main.js"></script>
+    <script src="js/product-detail-owl.js"></script>
+  </body>
+</html>
