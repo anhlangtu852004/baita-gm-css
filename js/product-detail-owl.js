@@ -11,10 +11,15 @@ $(document).ready(function () {
     owl = owlMain.owlCarousel({
       items: 1,
       startPosition: index ?? 0,
+      // dotsData: true,
+      // dots: true,
+      // dotsContainer: ".carousel-custom-dots",
+      // dotsEach: 2,
       onInitialized: counter, //When the plugin has initialized.
       onTranslated: counter, //When the translation of the stage has finished.
     });
   }
+
   function owlModalStart(index) {
     owlModal = owlModalContent.owlCarousel({
       items: 1,
@@ -23,9 +28,11 @@ $(document).ready(function () {
     });
   }
   owlModalContent.append(htmlOwlMain);
+
   owlMainStart(indexOwlMainActive);
   owlModalStart(indexOwlMainActive);
-  $("#owlModal").hide();
+  // $("#owlModal").hide();
+
   $("#owlMain .slides a").on("click", function () {
     owlModal.trigger("destroy.owl.carousel");
     owlModalStart(indexOwlMainActive);
@@ -35,13 +42,18 @@ $(document).ready(function () {
     //   startPosition: indexOwlMainActive,
     //   onTranslated: counter,
     // });
-
-    $("#owlModal").show();
+    alert($("#owlModal").prop("transform"));
+    // if($("#owlModal").prop("transform"))
+    $("#owlModal").css({ opacity: "1", transform: "translateX(0)" });
+  });
+  $(".owl-dot").click(function () {
+    owlModal.trigger("to.owl.carousel", [$(this).index(), 300]);
   });
 
   btnClose.click(function () {
     owl.trigger("destroy.owl.carousel");
     owlMainStart(indexOwlMainActive);
+
     // owlModal.trigger("destroy.owl.carousel");
     // owlModalStart(indexOwlMainActive);
     // owlModalContent.empty();

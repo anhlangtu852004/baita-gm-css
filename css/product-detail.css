@@ -9,19 +9,22 @@
   margin: 15px auto;
 }
 
-.prd-owl-modal {
+#owlModal {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
-  /* display: none; */
+  opacity: 0;
+  transform: translateX(-100%);
 }
 .prd-owl-modal-container {
-  width: 80%;
-  height: 300px;
+  width: 550px;
+  margin: auto;
+  /* width: 80%;*/
+
   /* background-color: white; */
   position: absolute;
   top: 50%;
@@ -30,6 +33,7 @@
 }
 .modal-item img {
   width: 100%;
+  height: auto;
 }
 .btn-modal-close {
   position: absolute;
@@ -40,6 +44,34 @@
 }
 /* end product */
 
+/* owl dot custom */
+
+.container-owl-thumb {
+  overflow: hidden;
+}
+.carousel-custom-dots {
+  display: flex;
+  margin: 10px 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 10px;
+  list-style-type: none;
+  width: 85%;
+}
+
+.carousel-custom-dots .owl-dot {
+  width: 65px;
+  height: 65px;
+}
+
+.carousel-custom-dots .owl-dot img {
+  object-fit: cover;
+  /* width: 100%; */
+  height: 100%;
+}
+
+/* owl dot */
 /* responesive */
 @media (min-width: 740px) {
 }
