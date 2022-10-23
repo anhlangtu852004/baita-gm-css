@@ -45,13 +45,17 @@
 /* end product */
 
 /* owl dot custom */
+.container-owl-main-thumb {
+  display: flex;
+  gap: 10px;
+}
 
-.container-owl-thumb {
+.container-owl-modal-thumb {
   overflow: hidden;
 }
 .carousel-custom-dots {
   display: flex;
-  margin: 10px 0;
+  margin: 0;
   padding: 0;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -60,17 +64,25 @@
   width: 85%;
 }
 
-.carousel-custom-dots .owl-dot {
+.carousel-custom-dots .owl-main-dot {
   width: 65px;
   height: 65px;
 }
 
-.carousel-custom-dots .owl-dot img {
+.carousel-custom-dots .owl-main-dot img {
   object-fit: cover;
   /* width: 100%; */
   height: 100%;
 }
 
+.btn-owl-modal-open {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: pointer;
+}
 /* owl dot */
 /* responesive */
 @media (min-width: 740px) {

@@ -42,8 +42,7 @@ $(document).ready(function () {
     //   startPosition: indexOwlMainActive,
     //   onTranslated: counter,
     // });
-    alert($("#owlModal").prop("transform"));
-    // if($("#owlModal").prop("transform"))
+
     $("#owlModal").css({ opacity: "1", transform: "translateX(0)" });
   });
   $(".owl-dot").click(function () {
