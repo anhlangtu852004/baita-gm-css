@@ -1,8 +1,13 @@
 $(document).ready(function () {
   var owlMain = $("#owlMain");
-  var htmlOwlMain = owlMain.html();
-  var owlModalContent = $("#prd-owl-modal-content");
-  var btnClose = $(".btn-modal-close");
+  var owlMainHtml = owlMain.html();
+  var owlMainThumb = $("#owlMainThumb").children().not("#btnOwlModalOpen");
+  var owlMainThumbHtml = owlMainThumb.html();
+
+  var owlModalContent = $("#prdOwlModalContent");
+  var owlModalThumb = $("#prdOwlModalThumb");
+  var btnClose = $("#btnModalClose");
+
   var indexOwlMainActive = 0;
   var owl;
   var owlModal;
@@ -27,7 +32,8 @@ $(document).ready(function () {
       onTranslated: counter,
     });
   }
-  owlModalContent.append(htmlOwlMain);
+  owlModalContent.append(owlMainHtml);
+  owlModalThumb.append(owlMainThumbHtml);
 
   owlMainStart(indexOwlMainActive);
   owlModalStart(indexOwlMainActive);
@@ -45,7 +51,12 @@ $(document).ready(function () {
 
     $("#owlModal").css({ opacity: "1", transform: "translateX(0)" });
   });
-  $(".owl-dot").click(function () {
+
+  $("#owlMainThumb .owl-main-dots .owl-main-dot").click(function () {
+    owl.trigger("to.owl.carousel", [$(this).index(), 300]);
+  });
+
+  $("#prdOwlModalThumb .owl-dots .owl-dot").click(function () {
     owlModal.trigger("to.owl.carousel", [$(this).index(), 300]);
   });
 
@@ -70,8 +81,24 @@ $(document).ready(function () {
       item = item - items;
     }
     $("#counter").html("item " + item + " of " + items);
+
+    // check active
+    $(".owlActive").removeClass("owlActive");
+    $("#owlMainThumb .owl-main-dots .owl-main-dot").each(function () {
+      var indexCurrentDot = $(this).index();
+      if (indexCurrentDot == indexOwlMainActive) {
+        $(this).addClass("owlActive");
+      }
+    });
   }
 
+  function addDotImageIntoModal() {
+    $("#owlMain .slides a").each(function (i, e) {
+      var otherSrc = $(e).find("img").attr("src");
+      var item = $("<div>", { class: "item" }).appendTo(owlModalThumb);
+      $("<img>", { src: otherSrc }).appendTo(item);
+    });
+  }
   // cach1
   // $("#owlMain .slides a").on("click", function () {
   //   $(".slides").each(function () {

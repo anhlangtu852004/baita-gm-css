@@ -9,8 +9,53 @@
   margin: 15px auto;
 }
 
-#owlModal {
+.container-owl-main-thumb {
+  overflow: hidden;
+  position: relative;
+}
+
+.owl-main-dots {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 10px;
+  list-style-type: none;
+  height: 70px;
+  width: 79%;
+}
+
+.owl-main-dots .owl-main-dot {
+  flex: 1 0 17%;
+  height: auto;
+}
+
+.owl-main-dots .owl-main-dot img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid transparent; */
+}
+
+.btn-owl-modal-open {
   position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: pointer;
+  width: 19%;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 13px;
+}
+
+#owlModal {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -19,6 +64,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transform: translateX(-100%);
+}
+#btnModalClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
 }
 .prd-owl-modal-container {
   width: 550px;
@@ -31,59 +82,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-item img {
-  width: 100%;
-  height: auto;
-}
-.btn-modal-close {
+
+#prdOwlModalThumb {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  font-size: 40px;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.owlActive {
+  border: 1px solid red;
 }
 /* end product */
-
-/* owl dot custom */
-.container-owl-main-thumb {
-  display: flex;
-  gap: 10px;
-}
-
-.container-owl-modal-thumb {
-  overflow: hidden;
-}
-.carousel-custom-dots {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  gap: 10px;
-  list-style-type: none;
-  width: 85%;
-}
-
-.carousel-custom-dots .owl-main-dot {
-  width: 65px;
-  height: 65px;
-}
-
-.carousel-custom-dots .owl-main-dot img {
-  object-fit: cover;
-  /* width: 100%; */
-  height: 100%;
-}
-
-.btn-owl-modal-open {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  cursor: pointer;
-}
-/* owl dot */
 /* responesive */
 @media (min-width: 740px) {
 }

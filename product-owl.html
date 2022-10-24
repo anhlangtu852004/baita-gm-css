@@ -60,53 +60,55 @@
           <a><img src="images/product-detail/arch-2.jpg" alt="img1" /></a>
         </div>
       </div>
-      <div class="container-owl-main-thumb">
-        <ul class="carousel-custom-dots" class="owl-dots-gm">
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-1.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-5.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-3.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-4.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-6.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-7.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-2.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-2.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-2.jpg" alt="img1" />
-          </li>
-          <li class="owl-main-dot">
-            <img src="images/product-detail/arch-2.jpg" alt="img1" />
-          </li>
-        </ul>
-        <div class="btn-owl-modal-open">xem tat ca</div>
+      <div id="owlMainThumb" class="container-owl-main-thumb">
+        <div>
+          <ul id class="owl-main-dots">
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-1.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-5.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-3.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-4.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-6.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-7.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-2.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-2.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-2.jpg" alt="img1" />
+            </li>
+            <li class="owl-main-dot">
+              <img src="images/product-detail/arch-2.jpg" alt="img1" />
+            </li>
+          </ul>
+        </div>
+        <div id="btnOwlModalOpen" class="btn-owl-modal-open">xem tat ca</div>
       </div>
       <!-- <div id="counter"></div> -->
     </div>
 
     <div id="owlModal" class="prd-owl-modal">
-      <span><i class="ri-close-circle-fill btn-modal-close"></i></span>
-      <div id="prd-owl-modal-container">
+      <span><i class="ri-close-circle-fill" id="btnModalClose"></i></span>
+      <div id="prdOwlModalContainer" class="prd-owl-modal-container">
         <div
-          id="prd-owl-modal-content"
+          id="prdOwlModalContent"
           class="prd-owl-modal-content owl-carousel"
         ></div>
-        <div id="container-owl-modal-thumb"></div>
       </div>
+      <div id="prdOwlModalThumb"></div>
     </div>
 
     <script src="assets/jquery/jquery-3.6.1.min.js"></script>
