@@ -83,6 +83,13 @@ $(document).ready(function () {
     $("#owlModal").css({ opacity: "0", transform: "translateX(-100%)" });
   });
 
+  $("#arrowOwlModalLeft").click(function () {
+    owlModal.trigger("prev.owl.carousel", [300]);
+  });
+  $("#arrowOwlModalRight").click(function () {
+    owlModal.trigger("next.owl.carousel", [300]);
+  });
+
   function counter(event) {
     // var element = event.target; // DOM element, in this example .owl-carousel
     // var items = event.item.count; // Number of items

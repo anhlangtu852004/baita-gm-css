@@ -70,6 +70,7 @@
   top: 20px;
   right: 20px;
   font-size: 60px;
+  cursor: pointer;
 }
 .prd-owl-modal-container {
   width: 550px;
@@ -96,6 +97,7 @@
 #prdOwlModalThumb .items .item {
   width: 100px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 #prdOwlModalThumb .items .item img {
@@ -106,6 +108,26 @@
   border: 1px solid red !important;
 }
 /* end product */
+
+/* arrow modal */
+.navigationOwlModal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  width: 100%;
+}
+.arrow-owl-modal-left,
+.arrow-owl-modal-right {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.arrow-owl-modal-right {
+  float: right;
+}
+/* end arrow modal */
+
 /* responesive */
 @media (min-width: 740px) {
 }
