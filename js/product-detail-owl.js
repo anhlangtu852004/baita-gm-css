@@ -21,7 +21,7 @@ $(document).ready(function () {
     owl = owlMain.owlCarousel({
       items: 1,
       startPosition: index ?? 0,
-      mouseDrag: false,
+      // mouseDrag: false,
       // dotsData: true,
       // dots: true,
       // dotsContainer: "#owlMainThumb",
