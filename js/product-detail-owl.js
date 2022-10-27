@@ -2,7 +2,6 @@ $(document).ready(function () {
   var owlMain = $("#owlMain");
   var owlMainHtml = owlMain.html();
   var owlMainThumb = $("#owlMainThumb").children().not("#btnOwlModalOpen");
-  
 
   var owlModalContent = $("#prdOwlModalContent");
   var owlModalThumb = $("#prdOwlModalThumb");
@@ -22,7 +21,7 @@ $(document).ready(function () {
     owl = owlMain.owlCarousel({
       items: 1,
       startPosition: index ?? 0,
-      // mouseDrag: false,
+      mouseDrag: false,
       // dotsData: true,
       // dots: true,
       // dotsContainer: "#owlMainThumb",
@@ -89,7 +88,6 @@ $(document).ready(function () {
   $("#arrowOwlModalRight").click(function () {
     owlModal.trigger("next.owl.carousel", [300]);
   });
-
 
   function counter(event) {
     // var element = event.target; // DOM element, in this example .owl-carousel

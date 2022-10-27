@@ -38,6 +38,7 @@
   flex: 1 0 19%;
   /* height: 100%; */
   border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .owl-main-dots .owl-main-dot img {
@@ -56,10 +57,12 @@
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   cursor: pointer;
-  width: 17.5%;
+  width: calc((100% / 5) - 18px);
+  border: 2px solid white;
   height: 100%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 13px;
+  text-align: center;
 }
 
 #owlModal {
@@ -76,7 +79,7 @@
 #btnModalClose {
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 30px;
   font-size: 45px;
   cursor: pointer;
 }
@@ -95,17 +98,20 @@
 #prdOwlModalThumb {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  /* transform: translateX(-50%); */
 }
 
 #prdOwlModalThumb .items {
   display: flex;
   width: 100%;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #prdOwlModalThumb .items .item {
-  width: 100px;
+  width: 80px;
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -182,6 +188,9 @@
 
 /* responesive */
 @media (min-width: 740px) {
+  .btn-owl-modal-open {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 1113px) {
 }
